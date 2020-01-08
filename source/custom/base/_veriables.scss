@@ -1,0 +1,57 @@
+// *** FONTS ***
+
+$fontBase: ('Lato', sans-serif);
+$fontAccent: ('Montserrat', sans-serif);
+
+// *** COLORS ***
+
+$colorBasic: #787878;
+$colorAccent:#4a4849;
+$colorWhite:#FFFFFF;
+$colorBlack:#000000;
+$colorSilver:#DEDEDE;
+
+//*** COLORS BOOTSTRAP 4 ***
+	
+$theme-colors: (
+	"primary":   $colorAccent );
+
+// *** SHADOWS ***
+$textShadow:.1rem .1rem .1rem $colorBlack;
+$textShadowSub:.03rem .03rem .05rem $colorBlack;
+
+// *** LOGO SVG ***
+
+// $logo: "../images/logo.svg";
+// $logoFooter: "../images/logo-footer.svg";
+
+// *** IMAGES ***
+	
+	// *** HOME BG ***
+		$intro_460: "../images/company-worker_460.jpg";
+		$intro_800: "../images/company-worker_800.jpg";
+		$intro_1920: "../images/company-worker_1920.jpg";
+	
+	// *** ABOUT BG ***
+		
+		$about_460: "../images/glass-buildings_460.jpg";
+		$about_800: "../images/glass-buildings_800.jpg";
+		$about_1920: "../images/glass-buildings_1920.jpg";
+		
+	// *** OFFER BG ***
+		
+		$offer_460: "../images/construction-site_460.jpg";
+		$offer_800: "../images/construction-site_800.jpg";
+		$offer_1920: "../images/construction-site_1920.jpg";
+		
+	// *** PORTFOLIO BG ***
+
+		$portfolio_460: "../images/skyscrapers_460.jpg";
+		$portfolio_800: "../images/skyscrapers_800.jpg";
+		$portfolio_1920: "../images/skyscrapers_1920.jpg";
+		
+ 	// *** CONTACT BG ***
+
+		$portfolio_460: "../images/construction-site_460.jpg";
+		$portfolio_800: "../images/construction-site_800.jpg";
+		$portfolio_1920: "../images/construction-site_1920.jpg";
