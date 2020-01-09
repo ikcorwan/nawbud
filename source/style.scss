@@ -1,11 +1,11 @@
 // Import own veriables
 @import 'custom/base/veriables';
 
-// Import source bootstrap 4.3.1
+// Import source bootstrap 4.4
 @import 'bootstrap/bootstrap';
 
 // Import own styles
 @import 'custom/base/mixins';
-//@import 'custom/base/typography';
-//@import 'custom/components/components';
+@import 'custom/base/typography';
+@import 'custom/components/components';
 //@import 'custom/pages/pages';

@@ -1,0 +1,27 @@
+.menu {
+	position:absolute;
+  	background-color: $colorGray;
+  	border-bottom: 1px solid $colorBasic;
+  	padding: 0.8rem 0;
+  	&__item {
+		margin: 0 0 0 1rem;
+		font-size: 0.70rem;
+		letter-spacing: .15rem;
+		font-family:$fontAccent;
+  		font-weight: 700;
+  		text-transform: uppercase;
+	}
+	&__link {
+		transition: all 0.5s;
+		color:$colorBasic;
+		text-decoration: none;
+		&:hover {
+    		color:$colorAccent;
+    	}
+    	&--is-active {
+    		color:$colorAccent;
+    	}
+	} 
+}
+
+
