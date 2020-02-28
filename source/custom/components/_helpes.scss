@@ -1,0 +1,60 @@
+.hr {
+	height: 2px;
+	width: 70px;
+	border-radius:5px;
+	background:$colorAccent;
+	&--white {
+		background: $colorWhite;
+	}
+}
+
+.icon {
+	padding-left:.8rem;
+	&__reviews {
+		@include background ($icon_reviews, no-repeat, center, center);
+	}
+	&__brush {
+		@include background ($icon_brush, no-repeat, center, center);
+	}
+	&__worker {
+		@include background ($icon_worker, no-repeat, center, center);
+	}
+	&__phone {
+		font-size: .9rem;
+		padding:.1rem .2rem;
+	}
+	&__envelope {
+		font-size: .9rem;
+		padding:.1rem .2rem;
+	}
+	&__top {
+		color:$colorBasic;
+	}
+
+}
+
+.mobilebar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $colorAnthracite;
+	box-shadow: 0 0 6px 2px rgba(0,0,0,0.2);
+	width: 100vw;
+	z-index: 9999;
+	&__row {
+		padding: 10px;
+	}
+	&__item {
+		
+	}
+}
+
+
+// *** Media queries ***
+
+@include media-breakpoint-up(md) {
+	.mobilebar {
+		display: none;
+	}
+}

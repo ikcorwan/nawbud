@@ -7,10 +7,11 @@
 
 // *** Background Image ***
 
-@mixin background($url, $repeat:no-repeat, $size:cover, $positionX:0, $positionY:0) {
+@mixin background($url, $repeat:no-repeat, $size:cover, $positionX:0, $positionY:0, $color:transparent) {
 	background-image: url($url);
 	background-repeat: $repeat;
 	background-size: $size;
 	background-position: $positionX $positionY;
+	background-color: $color;
 	
 }

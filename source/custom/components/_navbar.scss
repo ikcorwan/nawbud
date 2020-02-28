@@ -1,27 +1,53 @@
+.navbar {
+	&__brand {
+		@include background ($logo, no-repeat, center, center);
+		@include box (14rem, 1.5rem);
+		display: block;
+	}
+}
+
 .menu {
 	position:absolute;
-  	background-color: $colorGray;
-  	border-bottom: 1px solid $colorBasic;
-  	padding: 0.8rem 0;
-  	&__item {
+	background-color: $colorAnthracite;
+	border-bottom: 1px solid #1d1d1d;
+	box-shadow: 1px 3px 3px rgba(0, 0, 0, .2);
+	padding: 0.8rem 0;
+	&__item {
 		margin: 0 0 0 1rem;
-		font-size: 0.70rem;
+		font-size: 0.7rem;
 		letter-spacing: .15rem;
 		font-family:$fontAccent;
-  		font-weight: 700;
-  		text-transform: uppercase;
+		font-weight: 700;
+		text-transform: uppercase;
+		@include media-breakpoint-down(md) {
+				padding: 0.9rem;
+				text-align: center;
+				
+		}
+		&-list {
+			animation:expandX 2s;
+		}
 	}
 	&__link {
 		transition: all 0.5s;
 		color:$colorBasic;
 		text-decoration: none;
 		&:hover {
-    		color:$colorAccent;
-    	}
-    	&--is-active {
-    		color:$colorAccent;
-    	}
-	} 
+				color:$colorAccent;
+			}
+			&--is-active {
+				color:$colorAccent;
+			}
+	}
 }
 
-
+@-webkit-keyframes expandX {
+    from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}

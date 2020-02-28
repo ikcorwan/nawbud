@@ -1,0 +1,61 @@
+.glory {
+	background-color: #212121;
+	margin: 0;
+	&__mission {
+		padding-top: 60px;
+		padding-bottom: 40px;
+		
+	}
+	&__experience {
+		padding-top: 60px;
+		padding-bottom: 40px;
+		background-color: #191919;
+		
+	}
+	&__reviews {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	&__icon {
+		@include box (5rem, 5rem);
+		margin: 1.2rem auto;
+	}
+}
+
+.counter {
+	background-color: $colorWhite;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&__timer {
+		font-size: 2rem;
+		color:$colorBlack;
+		font-weight: 700;
+	}
+	&__title {
+		padding-top: 0.5rem;
+		font-size: .8rem;
+		text-transform: uppercase;
+		color:$colorBlack;
+	}
+	&__wrapper {
+		margin: 1rem;
+		padding: 1rem;
+		border: 2px solid $colorBlack;
+	}
+}
+
+
+// *** Media queries ***
+
+@include media-breakpoint-up(md) {
+	.counter {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		&__wrapper {
+			margin: auto;
+			padding: auto;
+			border: none;
+		}
+	}
+	
+}

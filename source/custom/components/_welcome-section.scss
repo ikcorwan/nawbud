@@ -1,0 +1,83 @@
+.welcome {
+	@include background ($worker_400, no-repeat, auto 100%, 100%, 50%, $colorWhite);
+	color:$colorAnthracite;
+	
+	&__text {
+		padding-top: 50px;
+        padding-bottom: 50px;
+	}
+    &__title {
+        text-transform: uppercase;
+    }
+	&__subtitle {
+		font-family: $fontBase;
+		font-size: 1rem;
+		letter-spacing: 0.5px;
+    	line-height: 1.5rem;
+		font-weight: 700;
+        
+	}
+}
+
+.slider {
+	display: inline-block;
+  	height: 1.5rem;
+  	overflow: hidden;
+  	vertical-align: middle;
+    mask-image: linear-gradient(transparent, white, white, white, transparent);
+    mask-type: luminance;
+    mask-mode: alpha;
+    &__words {
+    	display: inline-block;
+    	background-color: $colorAccent;
+    	margin: 0 3px;
+    	padding: 0 7px;
+    	list-style: none;
+    	animation-name: wordSlider;
+    	animation-timing-function: ease-out;
+    	animation-iteration-count: infinite;
+    	animation-duration: 7s;
+    }
+    &__word {
+    	display: block;
+    	line-height: 1.4rem;
+    	text-align: left;
+    }
+}
+
+
+// *** Animation ***
+
+@keyframes wordSlider {
+  $steps: -0%, -25%, -50%, -75%;
+  
+  @for $index from 0 to length($steps)-1 {
+    $next: $index+1;
+    $step: floor(100/(length($steps)-1));
+    $animation_step: floor($step*.2);
+  
+    #{$step*$index}%,
+    #{($step*$next) - $animation_step}% {
+      transform: translateY(nth($steps, $index+1));
+    }
+  }
+  100% {
+    transform: translateY(nth($steps, length($steps)));
+  }
+}
+
+
+// *** Media queries ***
+
+@include media-breakpoint-up(md) {
+    .welcome {
+        @include background ($worker_700, no-repeat, auto 100%, 100%, 50%, $colorWhite);
+        &__text {
+            padding-bottom: 0;
+        }
+        &__wrapper {
+            width: 80%;
+            float: left;
+        }
+    }
+}

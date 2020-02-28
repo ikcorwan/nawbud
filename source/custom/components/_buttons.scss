@@ -1,0 +1,99 @@
+.button {
+	width: 100%;
+	padding: .4rem 1.4rem;
+	line-height: 1.8rem;
+	letter-spacing: .1rem;
+	font-size: .9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: transparent;
+	transition: all 0.5s;
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+	&__toggler {
+		padding: .3rem 1rem;
+
+	}
+	&__intro {
+		background: rgba(38,38,38,0.6);
+		color:$colorAccent;
+		border: 2px solid $colorAccent;
+		&:hover {
+			border:2px solid $colorBasic;
+			color:$colorBasic;
+		}
+	}
+	&__read-more {
+		border: 2px solid $colorBlack;
+		color:$colorBlack;
+		&:hover {
+			border: 2px solid $colorBasic;
+		}
+	}
+	&__offer {
+		border: none;
+		color:$colorBasic;
+		&:hover {
+			color:$colorAccent;
+			transition: all 0.5s;
+		}
+	}
+	&__more {
+		color:$colorBasic;
+		border: 2px solid $colorBasic;
+		&:hover {
+			color:$colorAccent;
+			border:2px solid $colorAccent;
+			transition: all 0.5s;
+		}
+		&--is-hidden {
+			display: none;
+		}
+	}
+	&__mobilebar {
+		padding: .3rem 1rem;
+		font-size: .8rem;
+		&--call {
+			color:$colorAccent;
+			border: 2px solid $colorAccent;
+		}
+		&--contact {
+			color:$colorBasic;
+			border: 2px solid $colorBasic;
+		}
+	}
+	&__top {
+		display: none;
+	}	
+}
+
+// *** Media queries ***
+
+@include media-breakpoint-up(md) {
+	.button {
+		width: auto;
+		&__intro {
+			background: transparent;
+			width: 20%;
+		}
+		&__top {
+			position: fixed;
+  			width: 48px;
+  			height: 48px;
+  			bottom: 50px;
+  			right: 25px;
+  			z-index: 1050; 
+  			border: 1px solid $colorBasic;
+  			opacity:.7;
+  			color: $colorBasic;
+  			&:hover {
+  				opacity:1;
+  			}
+		}
+	}
+}
+

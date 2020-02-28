@@ -5,12 +5,13 @@ $fontAccent: ('Montserrat', sans-serif);
 
 // *** COLORS ***
 
-$colorBasic: #787878;
-$colorAccent:#4a4849;
+$colorBasic: #E6E6E6;
+$colorAccent:#f6dd1d;
 $colorWhite:#FFFFFF;
 $colorBlack:#000000;
 $colorSilver:#DEDEDE;
-$colorGray:#F8F8F8;
+$colorAnthracite:#212121;
+$colorGray:#f3f3f3;
 
 
 //*** COLORS BOOTSTRAP 4 ***
@@ -22,17 +23,23 @@ $theme-colors: (
 $textShadow:.1rem .1rem .1rem $colorBlack;
 $textShadowSub:.03rem .03rem .05rem $colorBlack;
 
-// *** LOGO SVG ***
 
-// $logo: "../images/logo.svg";
-// $logoFooter: "../images/logo-footer.svg";
 
 // *** IMAGES ***
-	
+
+	//*** LOGO SVG ***
+		$logo: "../images/logo_company.svg";
+		$logo_footer: "../images/logo_footer.svg";
+		
+	//*** ICONS SVG ***
+		$icon_reviews: "../images/icon_reviews.svg";
+		$icon_brush: "../images/icon_brush.svg";
+		$icon_worker: "../images/icon_worker.svg";
+
 	// *** HOME BG ***
-		$intro_460: "../images/company-worker_460.jpg";
-		$intro_800: "../images/company-worker_800.jpg";
-		$intro_1920: "../images/company-worker_1920.jpg";
+		$intro_460: "../images/company-worker_460.png";
+		$intro_800: "../images/company-worker_800.png";
+		$intro_1920: "../images/company-worker_1920.png";
 	
 	// *** ABOUT BG ***
 		
@@ -57,3 +64,16 @@ $textShadowSub:.03rem .03rem .05rem $colorBlack;
 		$portfolio_460: "../images/construction-site_460.jpg";
 		$portfolio_800: "../images/construction-site_800.jpg";
 		$portfolio_1920: "../images/construction-site_1920.jpg";
+		
+	// *** WORKER ***
+	
+		$worker_700: "../images/worker_700.png";
+		$worker_400: "../images/worker_400.png";
+		
+		
+	// *** BRICK ***
+
+		$wall_1920: "../images/wall_1920.png";
+
+	// *** FOOTER ***
+		$footer_1920: "../images/footer_1920.jpg";

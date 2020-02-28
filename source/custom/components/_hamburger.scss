@@ -1,4 +1,13 @@
 // *** Hamburger ***
+.button {
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+}
+
 .hamburger {
 	width: 30px;
 	display: block;

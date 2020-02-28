@@ -1,0 +1,53 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 45px;
+	background:linear-gradient(90deg,rgba(32,32,32,.70),rgba(32,32,32,.70)),url($footer_1920);
+	background-position: center center;
+	//background-color:$colorAnthracite;
+	&__top {
+		padding: 20px;
+	}
+	&__bottom {
+		padding-top: 10px;
+		padding-bottom: 5px;
+		background-color: darken($colorAnthracite, 5%);
+    	box-shadow: 1px 3px 3px rgba(0, 0, 0, .2), 1px -3px 3px rgba(0, 0, 0, .2);;
+	}
+	&__text {
+		color: lighten( $colorAnthracite, 25% );
+	}
+	&__icon {
+		color: lighten( $colorAnthracite, 25% );
+		padding: 0 10px;
+	}
+	&__logo {
+		@include background ($logo_footer, no-repeat, center, center);
+		@include box (12rem, 2rem);
+		filter: grayscale(1);
+		display: block;
+	}
+	&__link {
+		color: darken($colorWhite, 5%);
+	}
+}
+
+.top {
+	&__item {
+		float: left;
+		margin: 5px auto;
+	}
+}
+
+// *** Media queries ***
+
+@include media-breakpoint-up(md) {
+	.footer {
+		padding-bottom: 30px;
+	}
+	.top {
+		&_item {
+			margin: auto;
+			float:auto;
+		}
+	}
+}
