@@ -1,0 +1,48 @@
+.banner__about {
+	background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($about_460);
+	background-position: center center;
+	background-size: cover;
+}
+
+.about {
+	background-color: $colorAnthracite;
+	&__content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__img {
+		display: none;
+	}
+	&__subtitle {
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.2rem;
+		letter-spacing: .3rem;
+	}
+
+
+}
+
+
+// *** Media queries ***
+
+@include media-breakpoint-up(md) {
+	.banner__about {
+		background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($about_800);
+		background-position: center center;
+		background-size: cover;
+	}
+	.about {
+		&__img {
+			display: block;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.banner__about {
+		background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($about_1920);
+		background-position: center center;
+		background-size: cover;
+	}
+}

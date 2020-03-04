@@ -50,8 +50,10 @@
 	}
 }
 
-// Jumbotron
-.jumbotron {
+// Hero Unit
+.banner {
+	margin-top:2.7rem ;
+	@include box(100%, calc(45vh - 2.7rem));
 	&__title {
 		font-size: 1.2rem;
 		letter-spacing: .15rem;

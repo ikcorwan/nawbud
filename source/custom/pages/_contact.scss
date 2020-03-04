@@ -1,7 +1,4 @@
-.jumbotron__contact {
-	margin-top:2.7rem ;
-	@include box(100%, calc(45vh - 2.7rem));
-	// @include background ($wall_1920, no-repeat, 100%, 50%, 50%, #262626);
+.banner__contact {
 	background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($contact_1920);
 	background-position: center center;
 	background-size: cover;
