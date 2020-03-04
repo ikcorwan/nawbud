@@ -54,6 +54,15 @@
 			display: none;
 		}
 	}
+	&__contact {
+		color:$colorBasic;
+		border: 2px solid $colorBasic;
+		&:hover {
+			color:$colorAccent;
+			border:2px solid $colorAccent;
+			transition: all 0.5s;
+		}
+	}
 	&__mobilebar {
 		padding: .3rem 1rem;
 		font-size: .8rem;

@@ -1,0 +1,35 @@
+.jumbotron__contact {
+	margin-top:2.7rem ;
+	@include box(100%, calc(45vh - 2.7rem));
+	// @include background ($wall_1920, no-repeat, 100%, 50%, 50%, #262626);
+	background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($contact_1920);
+	background-position: center center;
+	background-size: cover;
+}
+
+
+.contact {
+	background-color: $colorAnthracite;
+	&__content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__map {
+		position: relative;
+    	overflow:hidden;
+		padding-top: 30px;
+		&:iframe {
+			left:0;
+    		top:0;
+    		height:100%;
+    		width:100%;
+    		position:absolute;
+		}
+	}
+	&__subtitle {
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.2rem;
+		letter-spacing: .3rem;
+	}
+}

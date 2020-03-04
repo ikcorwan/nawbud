@@ -50,6 +50,33 @@
 	}
 }
 
+// Jumbotron
+.jumbotron {
+	&__title {
+		font-size: 1.2rem;
+		letter-spacing: .15rem;
+		line-height: 1.5rem;
+		font-weight: 700;
+	}
+	&__subtitle {
+		font-size: 1rem;
+		line-height: 1.2rem;
+		letter-spacing: .15rem;
+		font-weight: 400;
+	}
+}
+
+// Breadcrumb
+.breadcrumb__item-list {
+	background-color: transparent;
+	&.breadcrumb__item-list .breadcrumb-item+.breadcrumb-item::before {
+  		content: "›";
+  		vertical-align:top;
+  		color: $colorBasic;
+ 		font-size:2rem;
+  		line-height:18px;
+  	}
+}
 
 // *** Media queries ***
 
