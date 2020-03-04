@@ -15,9 +15,9 @@ $(document).click(function(event){
 //Offer - Show More - Button
 
 $(document).ready(function(){
-  $(".button__more").click(function(){
+  $(".btn__more").click(function(){
     $(".offer__more").addClass("offer__more--is-visible");
-    $(".button__more").addClass("button__more--is-hidden");
+    $(".btn__more").addClass("btn__more--is-hidden");
 
   });
 });
