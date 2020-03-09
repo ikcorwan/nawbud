@@ -1,0 +1,43 @@
+.banner__portfolio {
+	background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($portfolio_460);
+	background-position: center center;
+	background-size: cover;
+}
+
+.portfolio {
+	background-color: $colorAnthracite;
+	&__text {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__subtitle {
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.2rem;
+		letter-spacing: .3rem;
+	}
+}
+
+.photo img {
+	&:hover {
+		filter: opacity (30%);
+	}
+}
+
+// *** Media queries ***
+
+@include media-breakpoint-up(md) {
+	.banner__portfolio {
+		background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($portfolio_800);
+		background-position: center center;
+		background-size: cover;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.banner__portfolio {
+		background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($portfolio_1920);
+		background-position: center center;
+		background-size: cover;
+	}
+}
