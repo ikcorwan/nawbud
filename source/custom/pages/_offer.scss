@@ -1,0 +1,22 @@
+.banner__scope-of-work {
+	background:linear-gradient(90deg,rgba(38,38,38,.80),rgba(34,34,34,.80)),url($offer_1920);
+	background-position: center center;
+	background-size: cover;
+}
+
+.scope-of-work {
+	background-color: $colorAnthracite;
+	&__content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__title {
+		text-transform:uppercase;
+	}
+	&__group {
+		color: darken($colorWhite, 30%);
+	}
+	&__item {
+		background-color: darken($colorAnthracite, 2%);
+	}
+}
