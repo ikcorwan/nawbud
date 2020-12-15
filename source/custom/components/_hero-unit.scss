@@ -1,10 +1,13 @@
 .intro {
 	@include box(100%, calc(100vh - 2.7rem));
 	@include background ($intro_460, no-repeat, auto 100%, 100%, 100%, #262626);
-	margin-top:2.7rem ;
+	margin-top: 2.7rem;
+
 	&__text {
 		padding-top: 20vh;
+
 	}
+
 	&__title {
 		font-size: 1.2rem;
 		letter-spacing: .15rem;
@@ -14,6 +17,7 @@
 		padding-left: 1rem;
 		margin-left: .3rem;
 	}
+
 	&__subtitle {
 		padding: 7vh 0;
 		text-align: center;
@@ -30,20 +34,23 @@
 
 @include media-breakpoint-up(md) {
 	.intro {
-  		@include background ($intro_800, no-repeat, auto 100%, 100%, 100%, #262626);
-  		&__title {
-  			font-size: 1.8rem;
+		@include background ($intro_800, no-repeat, auto 100%, 100%, 100%, #262626);
+
+		&__title {
+			font-size: 1.8rem;
 			letter-spacing: .2rem;
 			line-height: 2.2rem;
 		}
+
 		&__subtitle {
 			text-align: left;
 			font-size: 1rem;
 			line-height: 1.2rem;
 			letter-spacing: .25rem;
 		}
-  	}
+	}
 }
+
 @include media-breakpoint-up(lg) {
 	.intro {
 		@include background ($intro_1920, no-repeat, auto 100%, 100%, 100%, #262626);

@@ -1,0 +1,20 @@
+
+RewriteEngine on
+
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+google-site-verification=FWQUHc1oELd3bpaBd_b4u_KKTvEMVnxTVHQAtn0TFEw
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^nawbud\.com\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nawbud\.com\.pl$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/remontykrosno\.pl\/" [R=301,L]
+
